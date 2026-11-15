@@ -23,7 +23,7 @@ To update a project-local installation:
 
     $cy-dlc update
 
-Both operations preview file changes and wait for explicit approval before writing. The update defaults to the latest stable version; a specific version can be requested by adding it to the invocation.
+The cy-dlc skill itself performs release discovery, validation, previews, approval checks, and project file operations; no separate installer script is required. Both operations preview file changes and wait for explicit approval before writing. The update defaults to the latest stable version; a specific version can be requested by adding it to the invocation.
 
 ## Publishing
 
