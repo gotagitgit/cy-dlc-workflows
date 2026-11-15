@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "packageId": "cy-dlc-project-workflow",
+  "version": "0.1.0",
+  "sourceRepository": null,
+  "projectManifestPath": ".cy-dlc/manifest.json",
+  "files": [
+    {
+      "source": "package/AGENTS.md",
+      "target": "AGENTS.md",
+      "managedRegion": {
+        "start": "<!-- BEGIN CY-DLC: managed workflow -->",
+        "end": "<!-- END CY-DLC: managed workflow -->"
+      }
+    },
+    {
+      "source": "package/.agents/skills/change-impact-review/SKILL.md",
+      "target": ".agents/skills/change-impact-review/SKILL.md"
+    }
+  ]
+}
