@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "packageId": "cy-dlc-project-workflow",
   "version": "0.1.0",
-  "sourceRepository": null,
+  "sourceRepository": "https://github.com/gotagitgit/cy-dlc-workflows.git",
   "projectManifestPath": ".cy-dlc/manifest.json",
   "files": [
     {

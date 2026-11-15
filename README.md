@@ -27,6 +27,6 @@ Both operations preview file changes and wait for explicit approval before writi
 
 ## Publishing
 
-The canonical GitHub repository owner, name, and visibility have not been selected. Before publishing, set the source repository in the cy-dlc skill and package manifest, review the files, and create an immutable stable Git tag or release.
+The canonical source repository is https://github.com/gotagitgit/cy-dlc-workflows.git. Stable releases use immutable tags in the form vMAJOR.MINOR.PATCH. The project-local installer resolves the latest stable tag unless a version is supplied.
 
-This local checkout has no remote configured. Repository creation, commits, pushes, and release publication require separate user authorization.
+The repository source is maintained in this GitHub project. Publishing a stable release requires creating and pushing a version tag.

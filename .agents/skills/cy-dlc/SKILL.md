@@ -9,11 +9,11 @@ This skill manages a project-local copy of the workflow package published by the
 
 ## Source configuration
 
-The canonical GitHub repository owner and name are not configured yet. Before publishing this skill, replace the repository placeholder below with the approved owner and repository name:
+The canonical source repository is:
 
-    SOURCE_REPOSITORY: TBD
+    SOURCE_REPOSITORY: https://github.com/gotagitgit/cy-dlc-workflows.git
 
-If the source is still TBD, stop before attempting any remote fetch or project write. Ask the user for the canonical repository source.
+Use this repository as the source for stable tagged releases. If it cannot be reached or has no valid stable release tag, stop before writing project files and explain the issue.
 
 Use the user's existing GitHub authentication through Git when the repository is private. Never ask for, print, or store credentials or tokens.
 
