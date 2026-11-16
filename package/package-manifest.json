@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "packageId": "cy-dlc-project-workflow",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "sourceRepository": "https://github.com/gotagitgit/cy-dlc-workflows.git",
   "projectManifestPath": ".cy-dlc/manifest.json",
   "files": [
@@ -16,6 +16,14 @@
     {
       "source": "package/.agents/skills/change-impact-review/SKILL.md",
       "target": ".agents/skills/change-impact-review/SKILL.md"
+    },
+    {
+      "source": "package/docs/engineering/architecture-principles.md",
+      "target": "docs/engineering/architecture-principles.md"
+    },
+    {
+      "source": "package/docs/engineering/dotnet/coding-standards.md",
+      "target": "docs/engineering/dotnet/coding-standards.md"
     }
   ]
 }

@@ -28,6 +28,13 @@ Follow a structured, AI-DLC-inspired development lifecycle.
 
 ## Project and Feature Documentation
 
+### Engineering standards
+
+- Treat the project-owned standards under `docs/engineering/` as the source of truth for implementation conventions. The package installs `architecture-principles.md` and `dotnet/coding-standards.md` there; teams may extend these documents through their normal review process.
+- Before architecture or implementation work, read `docs/engineering/architecture-principles.md`. Apply Domain-Driven Design and Clean Architecture where they fit the domain and project needs; do not impose domain patterns or extra layers without a concrete reason.
+- For C# work, also read `docs/engineering/dotnet/coding-standards.md`, `.editorconfig`, and the relevant project/build settings. Existing project configuration and approved architecture decisions take precedence where the standards defer to them.
+- Keep `AGENTS.md` as the concise routing index. Put detailed, evolving conventions in the team-owned engineering documents, and put mechanically enforceable rules in `.editorconfig`, analyzers, project settings, and CI.
+
 Use project-wide documents for shared scope and current integrated design. Give each major feature its own document set so feature work can be reviewed and developed independently.
 
 ### Document layout and authority

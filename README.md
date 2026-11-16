@@ -5,11 +5,12 @@ This repository is the source for a reusable, project-local AI-DLC-inspired work
 ## Package contents
 
 - The project workflow and approval gates in package/AGENTS.md.
+- Team-owned architecture and .NET guidance installed under `docs/engineering/`.
 - The change-impact-review skill installed into each target project.
 - Package metadata in package/package-manifest.json.
 - The cy-dlc entry-point skill in .agents/skills/cy-dlc/SKILL.md.
 
-The package does not contain document templates. AGENTS.md directs Codex to create project-wide references and feature-scoped requirements, architecture, implementation-plan, and ADR documents when the relevant phases begin. Each major feature has a stable ID and its own document workspace; the change-impact-review skill traces changes across affected features while preserving approval history.
+The package includes baseline engineering guidance as team-owned project documents. Teams can extend and maintain these through normal review. `AGENTS.md` directs Codex to the relevant guidance. It also directs Codex to create project-wide references and feature-scoped requirements, architecture, implementation-plan, and ADR documents when the relevant phases begin. Each major feature has a stable ID and its own document workspace; the change-impact-review skill traces changes across affected features while preserving approval history.
 
 ## Use in Codex
 

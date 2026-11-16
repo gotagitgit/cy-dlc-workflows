@@ -39,7 +39,7 @@ An invocation authorizes discovery and a preview, not writes. After showing the 
 - Fetch/check out only that tag into a unique temporary directory. If the repository is unreachable, no stable tags exist, or the requested tag is absent, stop without changing project files.
 - Read `package/package-manifest.json`. Require `schemaVersion` 1, package ID `cy-dlc-project-workflow`, a version matching the selected tag without its leading `v`, and a non-empty `files` array.
 - For every file entry, require a source path within the fetched repository and a relative target path within the project. Reject absolute paths, `..` traversal, duplicate targets, missing sources, malformed managed-region markers, or unsupported manifest fields that affect installation. Never let manifest paths escape either root.
-- The current package includes `package/AGENTS.md` with a `managedRegion` and `.agents/skills/change-impact-review/SKILL.md` as a whole-file target. Use the manifest as the source of truth if the package later adds supported entries.
+- The package currently installs `package/AGENTS.md` with a managed region, the change-impact-review skill, and team-owned engineering guidance under `docs/engineering/`. Use `package/package-manifest.json` as the source of truth for all package files; do not assume a fixed file list.
 
 ## Prepare `init`
 
