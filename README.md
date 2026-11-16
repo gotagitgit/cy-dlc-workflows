@@ -9,7 +9,7 @@ This repository is the source for a reusable, project-local AI-DLC-inspired work
 - Package metadata in package/package-manifest.json.
 - The cy-dlc entry-point skill in .agents/skills/cy-dlc/SKILL.md.
 
-The package does not contain document templates. AGENTS.md directs Codex to create requirements, architecture, implementation-plan, and ADR documents when those phases begin.
+The package does not contain document templates. AGENTS.md directs Codex to create project-wide references and feature-scoped requirements, architecture, implementation-plan, and ADR documents when the relevant phases begin. Each major feature has a stable ID and its own document workspace; the change-impact-review skill traces changes across affected features while preserving approval history.
 
 ## Use in Codex
 
