@@ -32,6 +32,7 @@ Follow a structured, AI-DLC-inspired development lifecycle.
 
 - Treat the project-owned standards under `docs/engineering/` as the source of truth for implementation conventions. The package installs `architecture-principles.md` and `dotnet/coding-standards.md` there; teams may extend these documents through their normal review process.
 - Before architecture or implementation work, read `docs/engineering/architecture-principles.md`. Apply Domain-Driven Design and Clean Architecture where they fit the domain and project needs; do not impose domain patterns or extra layers without a concrete reason.
+- For .NET applications using Clean Architecture, use a separate project for each layer as defined in the engineering principles. A single-project or combined-layer exception requires explicit user approval during Architecture and Design.
 - For C# work, also read `docs/engineering/dotnet/coding-standards.md`, `.editorconfig`, and the relevant project/build settings. Existing project configuration and approved architecture decisions take precedence where the standards defer to them.
 - Keep `AGENTS.md` as the concise routing index. Put detailed, evolving conventions in the team-owned engineering documents, and put mechanically enforceable rules in `.editorconfig`, analyzers, project settings, and CI.
 
@@ -156,6 +157,7 @@ Only after approval:
 - Build and test after meaningful changes.
 - Do not introduce unapproved architectural changes.
 - Report deviations and request approval when necessary.
+- Before considering Construction complete, invoke the `coding-standards-review` skill. Address actionable findings and repeat the review until none remain, pausing for user direction when a finding requires a product, requirements, or architecture decision.
 
 ## Phase 6: Testing and Validation
 

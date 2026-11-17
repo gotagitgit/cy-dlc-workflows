@@ -32,7 +32,9 @@ Use dependency inversion to keep core policy independent of delivery mechanisms 
 - Infrastructure implements external concerns such as persistence, messaging, and third-party services, and depends inward on abstractions it implements.
 - Presentation/API translates external requests and responses and delegates work to application use cases. Keep business rules out of controllers and endpoints.
 - Composition roots wire implementations to abstractions. Avoid service location and hidden dependencies.
-- Keep contracts at the narrowest useful boundary. Do not create projects or interfaces solely to match a diagram.
+- Keep contracts at the narrowest useful boundary. Avoid projects and interfaces that have no responsibility or dependency boundary to enforce.
+- For .NET applications that use Clean Architecture, represent Domain, Application, Infrastructure, and API/Presentation as separate projects, with project references pointing inward. Layer folders inside one project do not provide the same compile-time dependency boundaries.
+- Combining layers or using a single project is an exception. Present its tradeoffs during Architecture and Design and proceed only after explicit user approval.
 
 ## Composition over inheritance
 
